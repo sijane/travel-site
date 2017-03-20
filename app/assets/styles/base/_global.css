@@ -4,7 +4,7 @@ body {
 }
 
 img {
-   max-width: 100%;
+   max-width: 100%;  /* to keep large image in a page frame */
    height: auto;
 }  
 

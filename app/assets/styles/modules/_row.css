@@ -6,12 +6,20 @@
       margin-right: -4rem;  /* to expand 4rem wide */
    }
 
+   &--gutters-large {
+      margin-right: -6.25rem;
+   }
+
    &--gutters > div {  /* select direct div */
       padding-right: 4rem;
    }
 
+   &--gutters-large > div {
+      padding-right: 6.25rem;
+   }
+
    &__b-margin-until-medium {
-      margin-bottom: 1rem;
+      margin-bottom: .5rem;
    }
 
    @mixin atMedium {
@@ -27,6 +35,11 @@
 
       &__medium-4--larger {
          width: 37%;
+      }
+
+      &__medium-6 {
+         float: left;
+         width: 50%;
       }
 
       &__medium-8 {

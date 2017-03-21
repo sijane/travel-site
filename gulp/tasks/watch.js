@@ -5,9 +5,11 @@ const gulp = require('gulp'),
 gulp.task('watch', () => {
 
    browserSync.init({
-      open: false,   // to not open a new window 
+      open: false,
       notify: false,
-      server: "app"
+      server: {
+         baseDir: "app"
+      }
    })
 
    watch('./app/index.html', () => {

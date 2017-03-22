@@ -13,5 +13,5 @@ gulp.task('styles', function() {
       console.log(errorInfo.toString());
       this.emit('end');  // to prevent gulp to stop watch when any css typo
    })
-   .pipe(gulp.dest('./app/temp/styles'))
+   .pipe(gulp.dest('./app/temp/styles'))  // need to type 'gulp styles' on terminal 
 })

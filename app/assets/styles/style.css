@@ -4,7 +4,7 @@
 @import "base/_mixins";
 
 @import "modules/_large-hero";
-@import "modules/_btn"; 
+@import "modules/_btn";
 @import "modules/_wrapper";
 @import "modules/_page-section";
 @import "modules/_headline";
@@ -16,5 +16,6 @@
 @import "modules/_site-footer";
 @import "modules/_site-header";
 @import "modules/_primary-nav";
+@import "modules/_reveal-item";
 
-@import "modules/_sprite";	
+@import "modules/_sprite";

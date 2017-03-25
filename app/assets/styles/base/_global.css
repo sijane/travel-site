@@ -6,10 +6,11 @@ body {
 img {
    max-width: 100%;  /* to keep large image in a page frame */
    height: auto;
-}  
+}
 
 * {
-   box-sizing: border-box;  /* so that don't have to calcalate the width for 100% */
+   box-sizing: border-box;
+   /* so that to not calcalate to be 100% wide */
 }
 
 a {

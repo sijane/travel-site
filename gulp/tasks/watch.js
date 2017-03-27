@@ -1,6 +1,6 @@
 const gulp = require('gulp'),
-      watch = require('gulp-watch');
-      browserSync = require('browser-sync').create();
+      watch = require('gulp-watch'),
+      browserSync = require('browser-sync').create()
 
 gulp.task('watch', () => {
 
@@ -13,7 +13,7 @@ gulp.task('watch', () => {
    })
 
    watch('./app/index.html', () => {
-      browserSync.reload();
+      browserSync.reload()
    })
 
    watch('./app/assets/styles/**/*.css', () => {
@@ -28,9 +28,9 @@ gulp.task('watch', () => {
 
 gulp.task('cssInject', ['styles'], () => {  // ['styles'] runs first then cssInject
    return gulp.src('./app/assets/styles/style.css')
-      .pipe(browserSync.stream());
+      .pipe(browserSync.stream())
 })
 
 gulp.task('scriptsRefresh', ['scripts'], () => {
-    browserSync.reload();
+    browserSync.reload()
 })

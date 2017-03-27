@@ -21,7 +21,7 @@
     position: absolute;
     width: 100%;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
 
   &__description {
@@ -33,16 +33,20 @@
 
   &__close {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .1rem .3rem;
     transform: scaleX(1.2);
     transform-origin: 100% 0;
-    color: $mainBlue;
+    background-color: $mainBlue;
+    color: #fff;
+    border-radius: .3rem;
     cursor: pointer;
 
     &:hover {
-      color: $mainOrange;
+      background-color: $mainOrange;
     }
   }
 }

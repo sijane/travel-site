@@ -5,6 +5,7 @@ module.exports = {
   },
   output: {
     path: "/Users/SJ/Sites/travel-site-files/app/temp/scripts",
+    // path: path.resolve(__dirname, "./app/temp/scripts"),
     filename: "[name].js"
   },
 

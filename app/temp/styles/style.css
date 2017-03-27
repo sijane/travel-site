@@ -1,14 +1,10 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
+ * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-
-/* Document
-   ========================================================================== */
 
 html {
   font-family: sans-serif; /* 1 */
@@ -16,9 +12,6 @@ html {
   -ms-text-size-adjust: 100%; /* 3 */
   -webkit-text-size-adjust: 100%; /* 3 */
 }
-
-/* Sections
-   ========================================================================== */
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -28,73 +21,69 @@ body {
   margin: 0;
 }
 
-/**
- * Add the correct display in IE 9-.
- */
-
-article,
-aside,
-footer,
-header,
-nav,
-section {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
+/* HTML5 display definitions
    ========================================================================== */
 
 /**
  * Add the correct display in IE 9-.
- * 1. Add the correct display in IE.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
  */
 
+article,
+aside,
+details, /* 1 */
 figcaption,
 figure,
-main { /* 1 */
+footer,
+header,
+main, /* 2 */
+menu,
+nav,
+section,
+summary { /* 1 */
   display: block;
 }
 
 /**
- * Add the correct margin in IE 8.
+ * Add the correct display in IE 9-.
  */
 
-figure {
-  margin: 1em 40px;
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
 }
 
 /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
+ * Add the correct display in iOS 4-7.
  */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+progress {
+  vertical-align: baseline;
 }
 
-/* Text-level semantics
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+
+template, /* 1 */
+[hidden] {
+  display: none;
+}
+
+/* Links
    ========================================================================== */
 
 /**
@@ -116,6 +105,9 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+
+/* Text-level semantics
+   ========================================================================== */
 
 /**
  * 1. Remove the bottom border in Firefox 39-.
@@ -147,23 +139,21 @@ strong {
 }
 
 /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
  * Add the correct font style in Android 4.3-.
  */
 
 dfn {
   font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 /**
@@ -208,24 +198,6 @@ sup {
    ========================================================================== */
 
 /**
- * Add the correct display in IE 9-.
- */
-
-audio,
-video {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in iOS 4-7.
- */
-
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-
-/**
  * Remove the border on images inside links in IE 10-.
  */
 
@@ -241,11 +213,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
 /* Forms
    ========================================================================== */
 
 /**
- * 1. Change the font styles in all browsers (opinionated).
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
  * 2. Remove the margin in Firefox and Safari.
  */
 
@@ -254,10 +261,16 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
+  font: inherit; /* 1 */
   margin: 0; /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+
+optgroup {
+  font-weight: bold;
 }
 
 /**
@@ -343,16 +356,6 @@ legend {
 }
 
 /**
- * 1. Add the correct display in IE 9-.
- * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
-
-/**
  * Remove the default vertical scrollbar in IE.
  */
 
@@ -391,12 +394,21 @@ textarea {
 }
 
 /**
- * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
 }
 
 /**
@@ -407,57 +419,6 @@ textarea {
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- */
-
-details, /* 1 */
-menu {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Scripting
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 9-.
- */
-
-canvas {
-  display: inline-block;
-}
-
-/**
- * Add the correct display in IE.
- */
-
-template {
-  display: none;
-}
-
-/* Hidden
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10-.
- */
-
-[hidden] {
-  display: none;
 }
 
 body {
@@ -846,14 +807,15 @@ a {
 
 @media (min-width: 800px) {
 
-  .row--equal-height-at-medium {
+  .flexbox .row--equal-height-at-medium {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.row--equal-height-at-medium > div {
+.flexbox .row--equal-height-at-medium > div {
+  float: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,14 +823,15 @@ a {
 
 @media (min-width: 1010px) {
 
-  .row--equal-height-at-large {
+  .flexbox .row--equal-height-at-large {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-.row--equal-height-at-large > div {
+.flexbox .row--equal-height-at-large > div {
+  float: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1406,79 +1369,83 @@ a {
 /* Do not edit modules/_sprite directly as it is automatically generated by Gulp */
 
 .icon {
-			background-image: url('/assets/images/sprites/sprite-0f9283b3.svg');
+			background-image: url('/assets/images/sprites/sprite-8eb89099.svg');
+		}
+
+.no-svg .icon {
+			background-image: url('/assets/images/sprites/sprite-8eb89099.png');
 		}
 
 .icon--clear-view-escapes {
-		width: 142.4px;
-		height: 59.53px;
+		width: 144.4px;
+		height: 61.53px;
 		background-position: 0 0;
 	}
 
 .icon--comment {
-		width: 64px;
-		height: 64px;
-		background-position: 99.70443349753694% 0;
+		width: 66px;
+		height: 66px;
+		background-position: 99.71014492753623% 0;
 	}
 
 .icon--facebook {
-		width: 21.23px;
-		height: 42.01px;
-		background-position: 26.040607071652357% 45.795830448496034%;
+		width: 23.23px;
+		height: 44.01px;
+		background-position: 26.424310365536293% 45.92133741323979%;
 	}
 
 .icon--fire {
-		width: 56px;
-		height: 64px;
-		background-position: 0 99.56481481481481%;
+		width: 58px;
+		height: 66px;
+		background-position: 0 99.58035714285714%;
 	}
 
 .icon--globe {
-		width: 64px;
-		height: 64px;
-		background-position: 27.586206896551722% 99.56481481481481%;
+		width: 66px;
+		height: 66px;
+		background-position: 28.019323671497585% 99.58035714285714%;
 	}
 
 .icon--instagram {
-		width: 42.01px;
-		height: 42.01px;
-		background-position: 63.2917018534157% 49.234556504346486%;
+		width: 44.01px;
+		height: 44.01px;
+		background-position: 63.059522249879905% 49.25740726919919%;
 	}
 
 .icon--mail {
-		width: 64px;
-		height: 48px;
-		background-position: 0 48.00806451612903%;
+		width: 66px;
+		height: 50px;
+		background-position: 0 48.0703125%;
 	}
 
 .icon--rain {
-		width: 64px;
-		height: 64px;
-		background-position: 99.70443349753694% 59.25925925925926%;
+		width: 66px;
+		height: 66px;
+		background-position: 99.71014492753623% 58.92857142857143%;
 	}
 
 .icon--star {
-		width: 64px;
-		height: 64px;
-		background-position: 59.11330049261084% 99.56481481481481%;
+		width: 66px;
+		height: 66px;
+		background-position: 59.90338164251208% 99.58035714285714%;
 	}
 
 .icon--twitter {
-		width: 51.78px;
-		height: 42.06px;
-		background-position: 94.04330452560171% 98.50700323226104%;
+		width: 53.78px;
+		height: 44.06px;
+		background-position: 94.15199343125627% 98.55159026429745%;
 	}
 
 .icon--wifi {
-		width: 60px;
-		height: 64px;
-		background-position: 68.79227053140097% 0;
+		width: 62px;
+		height: 66px;
+		background-position: 68.43601895734596% 0;
 	}
 
 .icon--youtube {
-		width: 34.75px;
-		height: 42px;
-		background-position: 36.69752421959096% 45.792307692307695%;
+		width: 36.75px;
+		height: 44px;
+		background-position: 37.76931216931217% 45.917910447761194%;
 	}
 
 /* CSS must end with semicomma */

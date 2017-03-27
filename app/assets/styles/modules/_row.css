@@ -15,7 +15,7 @@
    }
 
    &--gutters-small {
-      margin-right: -2.875rem;  
+      margin-right: -2.875rem;
    }
 
    &--gutters > div {  /* select direct divs, for & is the mother div */
@@ -35,11 +35,11 @@
    }
 
    @mixin atMedium {
-   
+
       &__b-margin-until-medium {
          margin-bottom: 0;
       }
-   
+
       &__medium-4 {
          float: left;
          width: 33.33%;
@@ -65,11 +65,11 @@
    }
 
    @mixin atLarge {
-   
+
       &__b-margin-until-large {
          margin-bottom: 0;
       }
-   
+
       &__large-4 {
          float: left;
          width: 33.33%;
@@ -96,22 +96,24 @@
 
 
    /* Begin equal height rules */
-   &--equal-height-at-medium {
+   .flexbox &--equal-height-at-medium {
       @mixin atMedium {
          display: flex;
       }
 
       & > div {
+         float: none;
          display: flex;
       }
    }
 
-   &--equal-height-at-large {
+   .flexbox &--equal-height-at-large {
       @mixin atLarge {
          display: flex;
       }
 
       & > div {
+         float: none;
          display: flex;
       }
    }
